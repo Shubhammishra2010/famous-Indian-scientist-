@@ -6,46 +6,82 @@
 <title>Famous Indian Scientists</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#d4fc79,#96e6a1);
+}
+
 h1{
-    background-color: lightgreen;
-    color: green;
+    background:linear-gradient(to right,#0f9b0f,#38ef7d);
+    color:white;
     text-align:center;
-    padding:15px;
+    padding:20px;
+    font-size:38px;
+    letter-spacing:2px;
+    box-shadow:0 4px 10px gray;
 }
 
 .main{
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
     flex-wrap:wrap;
-    padding:20px;
+    gap:25px;
+    padding:40px;
 }
 
 .scientist-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin:10px;
-    padding:15px;
-    width:300px;
-    box-shadow:0 0 8px gray;
+    width:320px;
+    padding:25px;
+    border-radius:20px;
+    color:white;
     text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.4s;
 }
 
-.scientist-card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:4px;
+.scientist-card:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.kalam{
+    background:linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+.raman{
+    background:linear-gradient(135deg,#36d1dc,#5b86e5);
+}
+
+.bose{
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+.circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.3);
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    margin-bottom:20px;
 }
 
 h2{
-    margin-top:10px;
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.5;
 }
 </style>
 </head>
@@ -56,22 +92,22 @@ h2{
 
 <div class="main">
 
-<div class="scientist-card">
-<img src="kalam.jpg" alt="A.P.J. Abdul Kalam">
+<div class="scientist-card kalam">
+<div class="circle">🚀</div>
 <h2>A. P. J. Abdul Kalam</h2>
-<p>Contribution: Missile Technology and Aerospace Engineering.</p>
+<p><b>Contribution:</b> Missile Technology and Aerospace Engineering.</p>
 </div>
 
-<div class="scientist-card">
-<img src="raman.jpg" alt="C. V. Raman">
+<div class="scientist-card raman">
+<div class="circle">🔬</div>
 <h2>C. V. Raman</h2>
-<p>Contribution: Raman Effect in Physics.</p>
+<p><b>Contribution:</b> Raman Effect in Physics.</p>
 </div>
 
-<div class="scientist-card">
-<img src="bose.jpg" alt="Jagadish Chandra Bose">
+<div class="scientist-card bose">
+<div class="circle">🌿</div>
 <h2>Jagadish Chandra Bose</h2>
-<p>Contribution: Plant Science and Radio Science.</p>
+<p><b>Contribution:</b> Plant Science and Radio Science.</p>
 </div>
 
 </div>
